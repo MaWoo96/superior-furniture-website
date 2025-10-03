@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 export default function SimpleHero() {
   return (
     <section className="bg-gradient-to-br from-white via-brand-cream/30 to-white py-20 md:py-32">

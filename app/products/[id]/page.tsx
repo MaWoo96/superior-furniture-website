@@ -2,8 +2,22 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Star, Truck, Clock, Shield, ChevronDown, Heart, Share2 } from 'lucide-react';
 
+interface Product {
+  id: number;
+  name: string;
+  category: string;
+  price: number;
+  originalPrice: number;
+  rating: number;
+  reviews: number;
+  description: string;
+  features: string[];
+  specs: Record<string, string>;
+  sizes: string[];
+}
+
 // Sample product data
-const products: { [key: string]: any } = {
+const products: Record<string, Product> = {
   '1': {
     id: 1,
     name: 'Cloud Comfort Memory Foam Mattress',
